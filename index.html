@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="StudySpark Hub: free Class 9 and 10 notes, Maths formulas, Science revision, practice MCQs and quizzes.">
+<title>StudySpark Hub | Learn Smart. Grow Fast.</title>
+<style>
+:root{--navy:#14213d;--blue:#315efb;--cyan:#dff7ff;--ink:#1d2742;--muted:#65708a;--paper:#f6f8ff;--white:#fff;--line:#e5e9f4;--green:#0e9f6e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+a{color:inherit;text-decoration:none}button,input,select{font:inherit}.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.12rem;color:var(--navy)}.logo{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#315efb,#27c6da);color:white;font-size:1.35rem}.navlinks{display:flex;align-items:center;gap:20px;font-size:.93rem;font-weight:650}.navlinks a:hover{color:var(--blue)}.navlinks .nav-cta{background:var(--blue);color:white;padding:10px 15px;border-radius:12px}
+.menu-btn{display:none;border:0;background:#eef2ff;border-radius:10px;padding:8px 12px}
+.hero{padding:72px 0 60px;background:radial-gradient(circle at 90% 10%,#dff7ff 0,transparent 28%),radial-gradient(circle at 5% 70%,#e8eaff 0,transparent 30%),var(--paper)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:40px}.eyebrow{display:inline-flex;gap:8px;align-items:center;background:#e7edff;color:#2449cf;padding:7px 12px;border-radius:99px;font-size:.84rem;font-weight:800}.hero h1{font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.05;letter-spacing:-.055em;margin:20px 0}.hero h1 span{color:var(--blue)}.hero p{font-size:1.08rem;color:var(--muted);max-width:600px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:13px;padding:13px 18px;font-weight:800;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--blue);color:white;box-shadow:0 10px 25px #315efb30}.secondary{background:white;border:1px solid var(--line);color:var(--navy)}.hero-note{font-size:.86rem!important}.hero-art{min-height:340px;border-radius:32px;padding:28px;background:linear-gradient(145deg,#14213d,#263f7d);color:white;position:relative;overflow:hidden;box-shadow:0 24px 60px #182b5930}.hero-art:before,.hero-art:after{content:"";position:absolute;border-radius:50%;background:#ffffff0b}.hero-art:before{width:300px;height:300px;right:-100px;top:-100px}.hero-art:after{width:220px;height:220px;left:-80px;bottom:-100px}.art-top{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1}.art-badge{background:#ffffff1b;border:1px solid #ffffff2a;padding:7px 11px;border-radius:99px;font-size:.8rem}.book-stack{font-size:5rem;text-align:center;margin:28px 0 16px;position:relative;z-index:1}.art-title{text-align:center;font-size:1.65rem;font-weight:900;position:relative;z-index:1}.art-sub{text-align:center;color:#d3defd;position:relative;z-index:1}.floating{position:absolute;background:white;color:var(--navy);padding:12px 15px;border-radius:15px;font-weight:800;box-shadow:0 10px 25px #0002;z-index:2}.float-one{left:18px;top:110px}.float-two{right:18px;bottom:50px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.stat{background:#ffffffb8;border:1px solid var(--line);border-radius:15px;padding:14px}.stat strong{display:block;color:var(--navy);font-size:1.15rem}.stat span{font-size:.82rem;color:var(--muted)}
+section{padding:68px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px}.kicker{text-transform:uppercase;letter-spacing:.13em;font-size:.75rem;color:var(--blue);font-weight:900}.section-head h2{font-size:clamp(1.8rem,3vw,2.65rem);line-height:1.12;margin:8px 0}.section-head p{margin:0;color:var(--muted);max-width:540px}.grid{display:grid;gap:18px}.feature-grid{grid-template-columns:repeat(3,1fr)}.card{background:white;border:1px solid var(--line);border-radius:20px;padding:23px;box-shadow:0 8px 28px #1d315008}.icon{width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:#edf1ff;font-size:1.5rem;margin-bottom:16px}.card h3{margin:0 0 7px;font-size:1.13rem}.card p{margin:0;color:var(--muted);font-size:.94rem}.card .text-link{display:inline-block;margin-top:16px;color:var(--blue);font-weight:850;font-size:.9rem}.subjects{background:#fff}.subject-grid{grid-template-columns:repeat(2,1fr)}.subject-card{border-radius:22px;padding:25px;background:linear-gradient(135deg,#eff3ff,#fff);border:1px solid #dfe6ff}.subject-card.science{background:linear-gradient(135deg,#e1fbf4,#fff);border-color:#d4f3e9}.subject-top{display:flex;justify-content:space-between;align-items:center;gap:10px}.subject-top .icon{margin:0;background:#fff}.tag{font-size:.78rem;font-weight:800;padding:5px 10px;border-radius:99px;background:#fff;color:var(--muted)}.chapter-list{padding:0;list-style:none;margin:20px 0 0}.chapter-list li{padding:10px 0;border-bottom:1px solid #e3e8f4;display:flex;justify-content:space-between;gap:12px;font-size:.93rem}.chapter-list li:last-child{border:0}.chapter-list a{color:var(--blue);font-weight:800;white-space:nowrap}
+.quiz-area{background:linear-gradient(135deg,#172746,#243f7d);color:white}.quiz-area .kicker{color:#9be8ff}.quiz-area .section-head p{color:#d3defd}.quiz-box{max-width:760px;background:white;color:var(--ink);border-radius:22px;padding:25px;margin:auto}.quiz-question{font-size:1.12rem;font-weight:850;margin-bottom:16px}.quiz-options{display:grid;grid-template-columns:1fr 1fr;gap:10px}.quiz-option{padding:13px;text-align:left;background:#f7f8fd;border:1px solid var(--line);border-radius:12px;cursor:pointer}.quiz-option:hover{border-color:var(--blue)}.quiz-option:disabled{cursor:default}.quiz-feedback{margin:14px 0 0;font-weight:800;min-height:28px}.quiz-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:15px}.progress{font-size:.85rem;color:var(--muted)}
+.formula-grid{grid-template-columns:repeat(3,1fr)}.formula{font-weight:800;font-size:1.05rem;color:var(--navy);background:#f7f9ff;border:1px dashed #cbd5f5;padding:12px;border-radius:12px;margin-top:13px}.formula small{display:block;color:var(--muted);font-weight:600;font-size:.78rem}
+.exam-grid{grid-template-columns:repeat(3,1fr)}.exam-card{display:flex;flex-direction:column;min-height:210px}.exam-card .btn{margin-top:auto;align-self:flex-start;padding:9px 13px;font-size:.88rem}
+.cta{padding:38px;border-radius:26px;background:linear-gradient(120deg,#dff7ff,#e8eaff);display:flex;align-items:center;justify-content:space-between;gap:25px}.cta h2{font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.15;margin:0 0 10px}.cta p{color:var(--muted);margin:0}
+footer{background:#111c34;color:#e9eeff;padding:35px 0}.footer-row{display:flex;justify-content:space-between;gap:25px;align-items:center}.footer-brand{font-weight:900;font-size:1.1rem}.footer-small{font-size:.84rem;color:#b9c4e2}.footer-links{display:flex;gap:15px;flex-wrap:wrap;font-size:.88rem}
+.modal-backdrop{position:fixed;inset:0;background:#10182c99;display:none;align-items:center;justify-content:center;padding:20px;z-index:30}.modal-backdrop.open{display:flex}.modal{background:white;border-radius:22px;padding:25px;width:min(650px,100%);max-height:85vh;overflow:auto}.modal-head{display:flex;justify-content:space-between;gap:15px;align-items:center}.modal-head h3{margin:0}.close{border:0;background:#eef2ff;border-radius:10px;padding:7px 12px;cursor:pointer}.modal-content{white-space:pre-wrap;color:#43506c}.search-row{display:flex;gap:10px;width:min(420px,100%)}.search-row input{min-width:0;flex:1;border:1px solid var(--line);border-radius:12px;padding:11px 13px;outline-color:var(--blue)}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.hero-art{min-height:300px}.feature-grid,.formula-grid,.exam-grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:white;padding:20px 5%;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch}.navlinks.show{display:flex}.menu-btn{display:block}.section-head{align-items:start;flex-direction:column}.cta{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.feature-grid,.subject-grid,.formula-grid,.exam-grid{grid-template-columns:1fr}.hero{padding-top:48px}.hero-art{padding:20px}.floating{font-size:.82rem}.stats{gap:8px}.stat{padding:10px}.quiz-options{grid-template-columns:1fr}.cta{padding:25px}.footer-row{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home"><span class="logo">✦</span><span>StudySpark <span style="color:#315efb">Hub</span></span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰ Menu</button>
+    <nav class="navlinks" id="navlinks">
+      <a href="#features">Features</a><a href="#subjects">Subjects</a><a href="#formulas">Formulas</a><a href="#quiz">Quiz</a><a href="#exams">Exam Prep</a><a class="nav-cta" href="#subjects">Start Learning →</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">✦ FREE LEARNING FOR CLASS 9–10</span>
+      <h1>Learn Smart.<br><span>Grow Fast.</span></h1>
+      <p>Your friendly study space for chapter-wise notes, Maths formulas, Science revision, practice questions and quick quizzes — all in one place.</p>
+      <div class="actions"><a class="btn primary" href="#subjects">Explore Study Material <span>→</span></a><a class="btn secondary" href="#quiz">Try a Quick Quiz ✦</a></div>
+      <p class="hero-note">📚 Made for learners. Designed for focused revision.</p>
+      <div class="stats"><div class="stat"><strong>Class 9–10</strong><span>School-level resources</span></div><div class="stat"><strong>100% Free</strong><span>Learning-first approach</span></div><div class="stat"><strong>Learn Anytime</strong><span>Phone & laptop friendly</span></div></div>
+    </div>
+    <div class="hero-art">
+      <div class="art-top"><span class="art-badge">✦ Your study companion</span><span>✧ ✧ ✧</span></div>
+      <div class="floating float-one">🧠 Think better</div><div class="book-stack">📚</div>
+      <div class="art-title">Small Steps.<br>Big Dreams.</div><div class="art-sub">Understand • Practise • Improve</div>
+      <div class="floating float-two">🎯 One topic at a time</div>
+    </div>
+  </div>
+</section>
+<section id="features">
+  <div class="container">
+    <div class="section-head"><div><div class="kicker">Everything you need</div><h2>Study tools that make learning easier</h2></div><p>Spend less time searching and more time understanding. Start with a topic, practise it, then check what you remember.</p></div>
+    <div class="grid feature-grid">
+      <article class="card"><div class="icon">📖</div><h3>Chapter-wise Notes</h3><p>Simple, organised revision notes to help you review important concepts from your syllabus.</p><a class="text-link" href="#subjects">Explore notes →</a></article>
+      <article class="card"><div class="icon">📝</div><h3>MCQs & Practice</h3><p>Test your understanding with short questions and practise explaining ideas in your own words.</p><a class="text-link" href="#quiz">Practise now →</a></article>
+      <article class="card"><div class="icon">🎯</div><h3>Formula Library</h3><p>Quick Maths and Science formula reminders, including units and useful relationships.</p><a class="text-link" href="#formulas">See formulas →</a></article>
+      <article class="card"><div class="icon">⚡</div><h3>Quick Revision</h3><p>Use short summaries and key points for a final review before class tests and exams.</p><a class="text-link" href="#subjects">Start revising →</a></article>
+      <article class="card"><div class="icon">🧠</div><h3>Interactive Quiz</h3><p>Answer sample questions, get instant feedback and learn from the explanation.</p><a class="text-link" href="#quiz">Take the quiz →</a></article>
+      <article class="card"><div class="icon">💯</div><h3>Exam Preparation</h3><p>Build a revision routine with practice sets, sample-paper planning and timed practice.</p><a class="text-link" href="#exams">Prepare better →</a></article>
+    </div>
+  </div>
+</section>
+<section class="subjects" id="subjects">
+  <div class="container">
+    <div class="section-head"><div><div class="kicker">Choose your subject</div><h2>Your next topic starts here</h2></div><div class="search-row"><input id="chapterSearch" type="search" placeholder="Search a topic..." aria-label="Search topics"><button class="btn primary" id="searchBtn">Search</button></div></div>
+    <div class="grid subject-grid">
+      <article class="subject-card" data-subject="maths">
+        <div class="subject-top"><div class="icon">➗</div><span class="tag">CLASS 9 & 10</span></div><h3>Mathematics</h3><p>Formulas, concepts and practice ideas for building strong Maths basics.</p>
+        <ul class="chapter-list">
+          <li data-topic="real numbers"><span>Real Numbers</span><a href="#" data-note="real">Open notes ↗</a></li>
+          <li data-topic="polynomials"><span>Polynomials</span><a href="#" data-note="poly">Open notes ↗</a></li>
+          <li data-topic="linear equations"><span>Pair of Linear Equations</span><a href="#" data-note="linear">Open notes ↗</a></li>
+          <li data-topic="quadratic equations"><span>Quadratic Equations</span><a href="#" data-note="quad">Open notes ↗</a></li>
+          <li data-topic="arithmetic progressions"><span>Arithmetic Progressions</span><a href="#" data-note="ap">Open notes ↗</a></li>
+        </ul>
+      </article>
+      <article class="subject-card science" data-subject="science">
+        <div class="subject-top"><div class="icon">🔬</div><span class="tag">CLASS 9 & 10</span></div><h3>Science</h3><p>Understand core ideas with short summaries and key definitions.</p>
+        <ul class="chapter-list">
+          <li data-topic="chemical reactions"><span>Chemical Reactions</span><a href="#" data-note="chem">Open notes ↗</a></li>
+          <li data-topic="acids bases salts"><span>Acids, Bases & Salts</span><a href="#" data-note="acid">Open notes ↗</a></li>
+          <li data-topic="light reflection refraction"><span>Light: Reflection & Refraction</span><a href="#" data-note="light">Open notes ↗</a></li>
+          <li data-topic="electricity"><span>Electricity</span><a href="#" data-note="electric">Open notes ↗</a></li>
+          <li data-topic="life processes"><span>Life Processes</span><a href="#" data-note="life">Open notes ↗</a></li>
+        </ul>
+      </article>
+    </div>
+    <p style="font-size:.85rem;color:#65708a;margin-top:18px">Note: These are starter summaries and sample topics. Check your current school/CBSE syllabus and textbook for the exact chapter list.</p>
+  </div>
+</section>
+<section id="formulas">
+  <div class="container">
+    <div class="section-head"><div><div class="kicker">Quick reference</div><h2>Formula corner</h2></div><p>Keep these useful relationships close while solving problems. Always check the conditions and units.</p></div>
+    <div class="grid formula-grid">
+      <article class="card"><div class="icon">📐</div><h3>Quadratic Equation</h3><p>For ax² + bx + c = 0, where a ≠ 0</p><div class="formula">x = (−b ± √(b² − 4ac)) / 2a<small>Quadratic formula</small></div></article>
+      <article class="card"><div class="icon">📈</div><h3>Arithmetic Progression</h3><p>First term a, common difference d</p><div class="formula">aₙ = a + (n − 1)d<small>nth term</small></div><div class="formula">Sₙ = n/2 [2a + (n − 1)d]<small>Sum of n terms</small></div></article>
+      <article class="card"><div class="icon">⚡</div><h3>Electricity</h3><p>Basic relationships for simple circuits</p><div class="formula">V = IR<small>Ohm’s law</small></div><div class="formula">P = VI = I²R = V²/R<small>Electric power (for an ohmic resistor)</small></div></article>
+      <article class="card"><div class="icon">🔍</div><h3>Magnification</h3><p>For spherical mirrors using the standard sign convention</p><div class="formula">m = hᵢ / hₒ = −v/u<small>Mirror magnification</small></div></article>
+      <article class="card"><div class="icon">🧮</div><h3>Probability</h3><p>For equally likely outcomes</p><div class="formula">P(E) = favourable outcomes / total outcomes<small>Probability of event E</small></div></article>
+      <article class="card"><div class="icon">📏</div><h3>Distance Formula</h3><p>Between points (x₁, y₁) and (x₂, y₂)</p><div class="formula">d = √[(x₂−x₁)² + (y₂−y₁)²]<small>Coordinate geometry</small></div></article>
+    </div>
+  </div>
+</section>
+<section class="quiz-area" id="quiz">
+  <div class="container">
+    <div class="section-head"><div><div class="kicker">Check your understanding</div><h2>Quick quiz challenge</h2></div><p>Choose an answer to see feedback. This starter quiz contains sample Maths and Science questions.</p></div>
+    <div class="quiz-box">
+      <div class="progress" id="quizProgress">Question 1 of 5</div><div class="quiz-question" id="quizQuestion">Loading quiz…</div>
+      <div class="quiz-options" id="quizOptions"></div><div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div>
+      <div class="quiz-controls"><span class="progress" id="quizScore">Score: 0</span><button class="btn primary" id="nextQuestion" disabled>Next question →</button></div>
+    </div>
+  </div>
+</section>
+<section id="exams">
+  <div class="container">
+    <div class="section-head"><div><div class="kicker">Get exam-ready</div><h2>A simple plan for better preparation</h2></div><p>Use these study routines alongside your teacher’s instructions and official sample papers.</p></div>
+    <div class="grid exam-grid">
+      <article class="card exam-card"><div class="icon">🗓️</div><h3>7-Day Revision Plan</h3><p>Revise one topic, solve questions, review mistakes and revisit difficult concepts each day.</p><button class="btn secondary open-resource" data-resource="plan">View study plan ↗</button></article>
+      <article class="card exam-card"><div class="icon">📝</div><h3>Sample Paper Practice</h3><p>Practise in a quiet place with a timer, then check your answers and note repeated mistakes.</p><button class="btn secondary open-resource" data-resource="paper">Practice guide ↗</button></article>
+      <article class="card exam-card"><div class="icon">📌</div><h3>Exam-Day Checklist</h3><p>Prepare stationery, sleep well, read instructions and leave time to review your work.</p><button class="btn secondary open-resource" data-resource="checklist">Open checklist ↗</button></article>
+    </div>
+    <div style="margin-top:42px" class="cta"><div><h2>Curiosity is your superpower.</h2><p>Take one small step today. Your future self will thank you.</p></div><a class="btn primary" href="#subjects">Choose a topic →</a></div>
+  </div>
+</section>
+</main>
+<footer><div class="container footer-row"><div><div class="footer-brand">✦ StudySpark Hub</div><div class="footer-small">Learn Smart. Grow Fast.</div></div><div class="footer-links"><a href="#features">Features</a><a href="#subjects">Subjects</a><a href="#quiz">Quiz</a><a href="#exams">Exam Prep</a></div><div class="footer-small">Independent student learning project • Free to explore</div></div></footer>
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><div class="modal-head"><h3 id="modalTitle">Study notes</h3><button class="close" id="closeModal" aria-label="Close">✕</button></div><div class="modal-content" id="modalContent"></div></div></div>
+<script>
+const $ = (s)=>document.querySelector(s);
+const menuBtn=$("#menuBtn"), navlinks=$("#navlinks");
+menuBtn.addEventListener("click",()=>navlinks.classList.toggle("show"));
+navlinks.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>navlinks.classList.remove("show")));
+
+const notes={
+real:{title:"Maths • Real Numbers (starter notes)",body:`KEY IDEAS\n• A prime number has exactly two positive factors: 1 and itself.\n• The Fundamental Theorem of Arithmetic says every composite number can be expressed as a product of primes, uniquely apart from order.\n• For positive integers a and b: HCF(a,b) × LCM(a,b) = a × b.\n\nEXAMPLE\nFind the HCF of 18 and 24.\n18 = 2 × 3²; 24 = 2³ × 3.\nTake the smallest powers common to both: HCF = 2 × 3 = 6.\n\nPRACTISE\nFind the HCF of 36 and 48. Try it before checking your textbook.`},
+poly:{title:"Maths • Polynomials (starter notes)",body:`KEY IDEAS\n• A polynomial in x has non-negative integer powers of x.\n• A zero of p(x) is a value of x for which p(x) = 0.\n• For ax² + bx + c, the sum of zeroes is −b/a and the product is c/a, where a ≠ 0.\n\nEXAMPLE\nFor p(x) = x² − 5x + 6, factorise: (x − 2)(x − 3).\nIts zeroes are 2 and 3; their sum is 5 and product is 6.\n\nPRACTISE\nFind the zeroes of x² − 7x + 12.`},
+linear:{title:"Maths • Pair of Linear Equations",body:`A pair of linear equations in two variables can have one solution, no solution, or infinitely many solutions.\n\nCOMMON METHODS\n• Substitution: express one variable in terms of the other.\n• Elimination: add or subtract equations to remove a variable.\n• Graphical method: plot both lines; their intersection gives a common solution.\n\nTIP\nAfter solving, substitute the values into BOTH original equations to verify them.\n\nPRACTISE\nSolve: x + y = 7 and x − y = 1.`},
+quad:{title:"Maths • Quadratic Equations",body:`A quadratic equation has the form ax² + bx + c = 0, where a ≠ 0.\n\nMETHODS\n• Factorisation\n• Completing the square\n• Quadratic formula: x = (−b ± √(b² − 4ac)) / 2a\n\nThe discriminant D = b² − 4ac helps classify the real roots:\n• D > 0: two distinct real roots\n• D = 0: two equal real roots\n• D < 0: no real roots\n\nPRACTISE\nSolve x² − 5x + 6 = 0.`},
+ap:{title:"Maths • Arithmetic Progressions",body:`An arithmetic progression (AP) is a sequence where the difference between consecutive terms is constant.\n\nExamples: 2, 5, 8, 11, … has first term a = 2 and common difference d = 3.\n\nnth term: aₙ = a + (n − 1)d\nSum of n terms: Sₙ = n/2 [2a + (n − 1)d]\n\nPRACTISE\nFind the 10th term of 4, 7, 10, 13, …`},
+chem:{title:"Science • Chemical Reactions",body:`KEY IDEAS\n• A chemical reaction changes reactants into products.\n• A balanced chemical equation has the same number of atoms of each element on both sides.\n• Common types: combination, decomposition, displacement, double displacement and redox reactions.\n• Oxidation can involve gain of oxygen or loss of hydrogen; reduction can involve loss of oxygen or gain of hydrogen.\n\nEXAMPLE\n2Mg + O₂ → 2MgO\nThe equation is balanced: two magnesium atoms and two oxygen atoms on each side.\n\nPRACTISE\nBalance: Fe + H₂O → Fe₃O₄ + H₂.`},
+acid:{title:"Science • Acids, Bases & Salts",body:`KEY IDEAS\n• Acids produce H⁺/H₃O⁺ ions in aqueous solution; bases produce OH⁻ ions in aqueous solution (at this level).\n• pH below 7 is acidic, pH 7 is neutral and pH above 7 is basic at about 25°C.\n• Acids react with many metals to produce a salt and hydrogen gas.\n• Acid + base → salt + water (neutralisation).\n\nSAFETY\nNever taste laboratory chemicals. Follow teacher instructions when handling them.\n\nPRACTISE\nWhat is the pH nature of a solution with pH 3?`},
+light:{title:"Science • Light: Reflection & Refraction",body:`REFLECTION\n• Angle of incidence = angle of reflection.\n• The incident ray, reflected ray and normal lie in the same plane.\n\nSPHERICAL MIRRORS\nMirror formula: 1/f = 1/v + 1/u\nMagnification: m = hᵢ/hₒ = −v/u\nUse the Cartesian sign convention consistently.\n\nREFRACTION\nLight changes direction when it passes between media because its speed changes.\nRefractive index n = speed of light in vacuum / speed of light in the medium.\n\nPRACTISE\nState the two laws of reflection.`},
+electric:{title:"Science • Electricity",body:`KEY FORMULAS\n• Current: I = Q/t\n• Ohm’s law: V = IR (for an ohmic conductor under constant physical conditions)\n• Electric power: P = VI = I²R = V²/R\n• Electrical energy: E = Pt\n\nUNITS\nCurrent: ampere (A); charge: coulomb (C); potential difference: volt (V); resistance: ohm (Ω); power: watt (W).\n\nPRACTISE\nA 4 Ω resistor is connected to 12 V. Calculate the current.`},
+life:{title:"Science • Life Processes",body:`KEY IDEAS\n• Life processes help organisms maintain life.\n• Nutrition supplies materials and energy; respiration releases usable energy from food.\n• In humans, digestion begins in the mouth; most nutrient absorption occurs in the small intestine.\n• The heart pumps blood through the circulatory system. In humans, double circulation separates pulmonary and systemic circulation.\n• Kidneys filter blood and help remove nitrogenous wastes; nephrons are their functional units.\n\nPRACTISE\nName the functional unit of the kidney.`}
+};
+const resources={
+plan:{title:"7-Day Revision Plan",body:`DAY 1 — Review one difficult Maths topic; solve 10 questions.\nDAY 2 — Revise one Science chapter; write key definitions from memory.\nDAY 3 — Practise Maths problems; check each solution.\nDAY 4 — Revise diagrams, equations and formula meanings.\nDAY 5 — Attempt a mixed MCQ set and review mistakes.\nDAY 6 — Attempt a sample paper with a timer.\nDAY 7 — Revisit mistakes, revise short notes and rest well.\n\nAdjust this plan to your school timetable and current syllabus.`},
+paper:{title:"Sample Paper Practice Guide",body:`1. Check the paper duration and instructions first.\n2. Keep a timer and avoid checking answers while attempting.\n3. Show working in Maths and include units in Science calculations.\n4. After finishing, mark errors in a separate notebook.\n5. Re-practise incorrect questions after a day or two.\n\nUse official CBSE sample papers and your school's current syllabus where applicable.`},
+checklist:{title:"Exam-Day Checklist",body:`□ Admit card / required school documents\n□ Pens, pencils, ruler and permitted geometry tools\n□ Water bottle if permitted\n□ Read all instructions carefully\n□ Plan time across sections\n□ Show steps and units where needed\n□ Keep a few minutes for checking\n□ Sleep adequately and eat normally before the exam`}
+};
+const backdrop=$("#modalBackdrop");
+function openModal(title,body){$("#modalTitle").textContent=title;$("#modalContent").textContent=body;backdrop.classList.add("open")}
+function closeModal(){backdrop.classList.remove("open")}
+$("#closeModal").addEventListener("click",closeModal);
+backdrop.addEventListener("click",e=>{if(e.target===backdrop)closeModal()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+document.querySelectorAll("[data-note]").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();const n=notes[a.dataset.note];openModal(n.title,n.body)}));
+document.querySelectorAll(".open-resource").forEach(b=>b.addEventListener("click",()=>{const r=resources[b.dataset.resource];openModal(r.title,r.body)}));
+function searchTopics(){const q=$("#chapterSearch").value.trim().toLowerCase();let count=0;document.querySelectorAll("[data-topic]").forEach(li=>{const show=!q||li.dataset.topic.includes(q)||li.textContent.toLowerCase().includes(q);li.style.display=show?"flex":"none";if(show)count++});if(q&&count===0)openModal("No matching topic",`We couldn't find “${q}”. Try a shorter keyword such as “light”, “polynomial” or “electricity”.`)}
+$("#searchBtn").addEventListener("click",searchTopics);
+$("#chapterSearch").addEventListener("keydown",e=>{if(e.key==="Enter")searchTopics()});
+
+const questions=[
+{q:"What is the value of 7²?",options:["14","49","21","72"],answer:1,why:"7² means 7 × 7, which equals 49."},
+{q:"Which gas is released when many acids react with suitable metals?",options:["Oxygen","Nitrogen","Hydrogen","Carbon dioxide"],answer:2,why:"A typical acid–metal reaction produces a salt and hydrogen gas."},
+{q:"If V = 12 V and R = 4 Ω, what is the current?",options:["3 A","48 A","8 A","0.33 A"],answer:0,why:"Using I = V/R, current = 12/4 = 3 A."},
+{q:"What is the common difference in 3, 7, 11, 15, …?",options:["3","4","7","11"],answer:1,why:"Subtract consecutive terms: 7 − 3 = 4."},
+{q:"Which organ filters blood to form urine?",options:["Lungs","Stomach","Kidneys","Pancreas"],answer:2,why:"The kidneys filter blood; nephrons are their functional units."}
+];
+let qi=0,score=0,answered=false;
+function renderQuiz(){const q=questions[qi];$("#quizProgress").textContent=`Question ${qi+1} of ${questions.length}`;$("#quizQuestion").textContent=q.q;$("#quizFeedback").textContent="";$("#quizScore").textContent=`Score: ${score}`;$("#nextQuestion").disabled=true;$("#nextQuestion").textContent=qi===questions.length-1?"See result ↗":"Next question →";answered=false;const box=$("#quizOptions");box.innerHTML="";q.options.forEach((op,i)=>{const b=document.createElement("button");b.className="quiz-option";b.textContent=String.fromCharCode(65+i)+". "+op;b.addEventListener("click",()=>chooseAnswer(i));box.appendChild(b)})}
+function chooseAnswer(i){if(answered)return;answered=true;const q=questions[qi];const buttons=[...document.querySelectorAll(".quiz-option")];buttons.forEach((b,j)=>{b.disabled=true;if(j===q.answer)b.style.borderColor="#0e9f6e";if(j===i&&i!==q.answer)b.style.borderColor="#dc4545"});if(i===q.answer){score++;$("#quizFeedback").textContent="✓ Well done! "+q.why;$("#quizFeedback").style.color="#0e9f6e"}else{$("#quizFeedback").textContent="Not quite. "+q.why;$("#quizFeedback").style.color="#c33"}$("#quizScore").textContent=`Score: ${score}`;$("#nextQuestion").disabled=false}
+$("#nextQuestion").addEventListener("click",()=>{if(qi<questions.length-1){qi++;renderQuiz()}else{openModal("Quiz complete!",`You scored ${score} out of ${questions.length}.\n\n${score===questions.length?"Excellent work! Try another topic next.":score>=3?"Good effort! Review the explanations and try again.":"Keep practising. Revisit the notes and attempt the quiz again."}`);qi=0;score=0;renderQuiz()}});
+renderQuiz();
+</script>
+</body>
+</html>
